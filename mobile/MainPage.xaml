@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobile.MainPage">
+
+    <StackLayout>
+
+        <Label Text="Beanchat" FontSize="25" Padding="0,60,0,10"/>
+
+        <Label x:Name="msgDisplayBox" Text="heey" />
+
+        <Entry Placeholder="Message" x:Name="sendBox" Completed="SendButton_Clicked"/>
+        
+        
+        
+        
+        
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+
+            </Grid.ColumnDefinitions>
+            <BoxView  />
+            
+            
+
+            <Button Text="Refresh" Clicked="RefreshButton_Clicked"  HorizontalOptions="Center" VerticalOptions="Center"/>
+
+            <BoxView Grid.Column="1"
+                />
+            <Button Text="Send" Clicked="SendButton_Clicked" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="1"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
