@@ -68,7 +68,7 @@ namespace mobile
         }
         void SendButton_Clicked(object sender, EventArgs e)
         {
-            var url = "http://api.beanchat.isaacthoman.me/api/App?test="+ sendBox.Text;
+            var url = "http://api.beanchat.isaacthoman.me/api/App?message="+ sendBox.Text;
 
             var httpRequest = (HttpWebRequest)WebRequest.Create(url);
             httpRequest.Method = "POST";
